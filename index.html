@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="description" content="Ship It - Build your logistics empire from hand delivery to quantum teleportation">
+    <title>Ship It - Idle Logistics Empire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Stats Bar -->
+    <header class="stats-bar">
+        <div class="stat-group primary">
+            <span class="stat-label">Revenue</span>
+            <span class="stat-value" id="revenue">$0</span>
+        </div>
+        <div class="stat-group">
+            <span class="stat-label">SPS</span>
+            <span class="stat-value" id="sps">0/s</span>
+        </div>
+        <div class="stat-group multiplier" id="multiplier-display" style="display: none;">
+            <span class="stat-label">Multiplier</span>
+            <span class="stat-value" id="global-multiplier">1.0x</span>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Logistics Domains -->
+        <div class="logistics-feed" id="logistics-feed">
+            <!-- Domains will be rendered by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Ship It Button -->
+    <button class="ship-it-btn" id="ship-it-btn">
+        <span class="ship-it-icon">📦</span>
+        <span class="ship-it-text">Ship It!</span>
+    </button>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <button class="nav-btn active" data-tab="logistics">
+            <span class="nav-icon">🚚</span>
+            <span class="nav-label">Logistics</span>
+        </button>
+        <button class="nav-btn" data-tab="upgrades">
+            <span class="nav-icon">⚡</span>
+            <span class="nav-label">Upgrades</span>
+        </button>
+        <button class="nav-btn" data-tab="prestige">
+            <span class="nav-icon">🔄</span>
+            <span class="nav-label">Prestige</span>
+        </button>
+        <button class="nav-btn" data-tab="stats">
+            <span class="nav-icon">📊</span>
+            <span class="nav-label">Stats</span>
+        </button>
+    </nav>
+
+    <!-- Tab Panels -->
+    <div class="tab-panel" id="upgrades-panel" style="display: none;">
+        <div class="panel-content">
+            <h2>Global Upgrades</h2>
+            <div class="upgrades-list" id="upgrades-list">
+                <!-- Upgrades rendered by JS -->
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-panel" id="prestige-panel" style="display: none;">
+        <div class="panel-content">
+            <h2>Re-Architecture</h2>
+            <p class="prestige-description">Reset your progress to gain permanent Logistics Insight multipliers.</p>
+            <div class="prestige-info">
+                <div class="prestige-stat">
+                    <span class="prestige-label">Current Insight</span>
+                    <span class="prestige-value" id="current-insight">0</span>
+                </div>
+                <div class="prestige-stat">
+                    <span class="prestige-label">Insight on Reset</span>
+                    <span class="prestige-value" id="insight-on-reset">0</span>
+                </div>
+                <div class="prestige-stat">
+                    <span class="prestige-label">Current Bonus</span>
+                    <span class="prestige-value" id="insight-bonus">1.00x</span>
+                </div>
+            </div>
+            <button class="prestige-btn" id="prestige-btn" disabled>
+                <span>Re-Architect</span>
+                <small>Requires $1.00T lifetime earnings</small>
+            </button>
+        </div>
+    </div>
+
+    <div class="tab-panel" id="stats-panel" style="display: none;">
+        <div class="panel-content">
+            <h2>Statistics</h2>
+            <div class="stats-list">
+                <div class="stat-row">
+                    <span>Total Shipments</span>
+                    <span id="stat-total-shipments">0</span>
+                </div>
+                <div class="stat-row">
+                    <span>Lifetime Revenue</span>
+                    <span id="stat-lifetime-revenue">$0</span>
+                </div>
+                <div class="stat-row">
+                    <span>Manual Ships</span>
+                    <span id="stat-manual-ships">0</span>
+                </div>
+                <div class="stat-row">
+                    <span>Play Time</span>
+                    <span id="stat-playtime">0:00:00</span>
+                </div>
+                <div class="stat-row">
+                    <span>Prestige Count</span>
+                    <span id="stat-prestige-count">0</span>
+                </div>
+                <div class="stat-row">
+                    <span>Units Owned</span>
+                    <span id="stat-units-owned">0</span>
+                </div>
+                <div class="stat-row">
+                    <span>Highest Tier</span>
+                    <span id="stat-highest-tier">-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Offline Progress Modal -->
+    <div class="modal" id="offline-modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Welcome Back!</h2>
+            <p>While you were away, your logistics empire earned:</p>
+            <div class="offline-earnings" id="offline-earnings">$0</div>
+            <button class="modal-btn" id="offline-dismiss">Collect</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
