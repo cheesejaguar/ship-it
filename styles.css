@@ -71,6 +71,8 @@
 html {
     font-size: 16px;
     -webkit-tap-highlight-color: transparent;
+    /* Prevent double-tap zoom on iOS while preserving scroll/pinch */
+    touch-action: manipulation;
 }
 
 body {
@@ -351,6 +353,8 @@ body {
     transition: all var(--transition-fast);
     white-space: nowrap;
     min-width: 70px;
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
 }
 
 .unit-buy-btn:disabled {
@@ -396,6 +400,11 @@ body {
     gap: 2px;
     z-index: 90;
     transition: all var(--transition-fast);
+    /* Prevent all default touch behaviors - no scroll/zoom needed on this button */
+    touch-action: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .ship-it-btn:active {
@@ -476,6 +485,8 @@ body {
     cursor: pointer;
     color: var(--text-muted);
     transition: color var(--transition-fast);
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
 }
 
 .nav-btn.active {
@@ -568,6 +579,8 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all var(--transition-fast);
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
 }
 
 .upgrade-btn:disabled {
@@ -623,6 +636,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: var(--space-xs);
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
 }
 
 .prestige-btn:disabled {
