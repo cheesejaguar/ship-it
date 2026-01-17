@@ -4,7 +4,7 @@
  */
 
 // ============================================================================
-// GAME DATA - All 10 Logistics Domains with 10 Tiers Each
+// GAME DATA - All 10 Logistics Domains with 20 Tiers Each (200 Total Units)
 // ============================================================================
 
 const DOMAINS = [
@@ -16,15 +16,25 @@ const DOMAINS = [
         unlockCost: 0,
         units: [
             { name: 'Bare Hands', icon: '✋', baseSPS: 0.1, baseCost: 10 },
-            { name: 'Woven Grass Sack', icon: '🧺', baseSPS: 0.5, baseCost: 100 },
-            { name: 'Shoulder Pole', icon: '🪵', baseSPS: 2, baseCost: 500 },
-            { name: 'Leather Backpack', icon: '🎒', baseSPS: 8, baseCost: 2000 },
-            { name: 'Wheelbarrow', icon: '🛒', baseSPS: 30, baseCost: 8000 },
-            { name: 'Hiking Gear', icon: '🥾', baseSPS: 100, baseCost: 30000 },
-            { name: 'Hand Truck', icon: '📦', baseSPS: 350, baseCost: 100000 },
-            { name: 'Hydraulic Pallet Jack', icon: '🔧', baseSPS: 1200, baseCost: 400000 },
-            { name: 'Powered Exoskeleton', icon: '🦾', baseSPS: 4000, baseCost: 1500000 },
-            { name: 'Grav-Assist Combat Suit', icon: '🦸', baseSPS: 15000, baseCost: 6000000 }
+            { name: 'Woven Grass Sack', icon: '🧺', baseSPS: 0.3, baseCost: 50 },
+            { name: 'Clay Pot Carrier', icon: '🏺', baseSPS: 0.8, baseCost: 150 },
+            { name: 'Shoulder Pole', icon: '🪵', baseSPS: 2, baseCost: 400 },
+            { name: 'Leather Backpack', icon: '🎒', baseSPS: 5, baseCost: 1000 },
+            { name: 'Wicker Basket Frame', icon: '🧱', baseSPS: 12, baseCost: 2500 },
+            { name: 'Wheelbarrow', icon: '🛒', baseSPS: 30, baseCost: 6000 },
+            { name: 'Hiking Gear', icon: '🥾', baseSPS: 70, baseCost: 15000 },
+            { name: 'Cargo Sled', icon: '🛷', baseSPS: 160, baseCost: 35000 },
+            { name: 'Hand Truck', icon: '📦', baseSPS: 350, baseCost: 80000 },
+            { name: 'Folding Cart', icon: '🛗', baseSPS: 750, baseCost: 180000 },
+            { name: 'Hydraulic Pallet Jack', icon: '🔧', baseSPS: 1600, baseCost: 400000 },
+            { name: 'Motorized Dolly', icon: '🔌', baseSPS: 3500, baseCost: 900000 },
+            { name: 'Segway Hauler', icon: '🛴', baseSPS: 7500, baseCost: 2000000 },
+            { name: 'Powered Exoskeleton', icon: '🦾', baseSPS: 16000, baseCost: 4500000 },
+            { name: 'Jetpack Courier', icon: '🎒', baseSPS: 35000, baseCost: 10000000 },
+            { name: 'Grav-Assist Suit', icon: '🦸', baseSPS: 75000, baseCost: 22000000 },
+            { name: 'Neural Interface Carrier', icon: '🧠', baseSPS: 160000, baseCost: 50000000 },
+            { name: 'Quantum Muscle Fiber', icon: '💪', baseSPS: 350000, baseCost: 110000000 },
+            { name: 'Transcendent Porter', icon: '👼', baseSPS: 750000, baseCost: 250000000 }
         ]
     },
     {
@@ -34,16 +44,26 @@ const DOMAINS = [
         description: 'Let nature do the work.',
         unlockCost: 1000,
         units: [
-            { name: 'Domesticated Dog', icon: '🐕', baseSPS: 0.8, baseCost: 150 },
-            { name: 'Pack Mule', icon: '🫏', baseSPS: 4, baseCost: 800 },
-            { name: 'Camel Caravan', icon: '🐪', baseSPS: 15, baseCost: 3000 },
-            { name: 'Horse & Carriage', icon: '🐎', baseSPS: 50, baseCost: 12000 },
-            { name: 'War Elephant', icon: '🐘', baseSPS: 180, baseCost: 50000 },
-            { name: 'Carrier Pigeons', icon: '🐦', baseSPS: 600, baseCost: 180000 },
-            { name: 'Engineered Beast', icon: '🦎', baseSPS: 2000, baseCost: 700000 },
-            { name: 'Cyber-Steed', icon: '🦿', baseSPS: 7000, baseCost: 2500000 },
-            { name: 'Bio-Leviathan', icon: '🐋', baseSPS: 25000, baseCost: 10000000 },
-            { name: 'Hive-Mind Swarm', icon: '🐝', baseSPS: 90000, baseCost: 40000000 }
+            { name: 'Domesticated Dog', icon: '🐕', baseSPS: 0.5, baseCost: 80 },
+            { name: 'Trained Goat', icon: '🐐', baseSPS: 1.5, baseCost: 250 },
+            { name: 'Pack Llama', icon: '🦙', baseSPS: 4, baseCost: 700 },
+            { name: 'Pack Mule', icon: '🫏', baseSPS: 10, baseCost: 1800 },
+            { name: 'Camel Caravan', icon: '🐪', baseSPS: 25, baseCost: 4500 },
+            { name: 'Reindeer Team', icon: '🦌', baseSPS: 60, baseCost: 11000 },
+            { name: 'Horse & Carriage', icon: '🐎', baseSPS: 140, baseCost: 28000 },
+            { name: 'Ox Cart', icon: '🐂', baseSPS: 320, baseCost: 70000 },
+            { name: 'War Elephant', icon: '🐘', baseSPS: 720, baseCost: 170000 },
+            { name: 'Carrier Pigeons', icon: '🐦', baseSPS: 1600, baseCost: 400000 },
+            { name: 'Dolphin Courier', icon: '🐬', baseSPS: 3600, baseCost: 950000 },
+            { name: 'Trained Eagle', icon: '🦅', baseSPS: 8000, baseCost: 2200000 },
+            { name: 'Engineered Beast', icon: '🦎', baseSPS: 18000, baseCost: 5200000 },
+            { name: 'Bio-Mechanical Steed', icon: '🦿', baseSPS: 40000, baseCost: 12000000 },
+            { name: 'Giant Beetle Mount', icon: '🪲', baseSPS: 90000, baseCost: 28000000 },
+            { name: 'Kraken Submersible', icon: '🦑', baseSPS: 200000, baseCost: 65000000 },
+            { name: 'Bio-Leviathan', icon: '🐋', baseSPS: 450000, baseCost: 150000000 },
+            { name: 'Phoenix Express', icon: '🔥', baseSPS: 1000000, baseCost: 350000000 },
+            { name: 'Dragon Freight', icon: '🐉', baseSPS: 2200000, baseCost: 800000000 },
+            { name: 'Hive-Mind Swarm', icon: '🐝', baseSPS: 5000000, baseCost: 1800000000 }
         ]
     },
     {
@@ -53,16 +73,26 @@ const DOMAINS = [
         description: 'Infrastructure matters.',
         unlockCost: 50000,
         units: [
-            { name: 'Wooden Cart', icon: '🛞', baseSPS: 5, baseCost: 1000 },
-            { name: 'Pedal Rickshaw', icon: '🚲', baseSPS: 20, baseCost: 5000 },
-            { name: 'Steam Wagon', icon: '🚂', baseSPS: 80, baseCost: 20000 },
-            { name: 'Combustion Pickup', icon: '🛻', baseSPS: 300, baseCost: 80000 },
-            { name: 'Box Truck', icon: '🚚', baseSPS: 1000, baseCost: 300000 },
-            { name: 'Semi-Truck', icon: '🚛', baseSPS: 3500, baseCost: 1200000 },
-            { name: 'Electric Convoy', icon: '⚡', baseSPS: 12000, baseCost: 5000000 },
-            { name: 'All-Terrain Rover', icon: '🚙', baseSPS: 40000, baseCost: 20000000 },
-            { name: 'Nuclear Hauler', icon: '☢️', baseSPS: 150000, baseCost: 80000000 },
-            { name: 'Nanotech Smart-Roads', icon: '🛤️', baseSPS: 500000, baseCost: 300000000 }
+            { name: 'Wooden Cart', icon: '🛞', baseSPS: 8, baseCost: 2000 },
+            { name: 'Handcart', icon: '🛒', baseSPS: 20, baseCost: 5500 },
+            { name: 'Pedal Rickshaw', icon: '🚲', baseSPS: 50, baseCost: 14000 },
+            { name: 'Penny Farthing Cargo', icon: '🎡', baseSPS: 120, baseCost: 35000 },
+            { name: 'Steam Wagon', icon: '🚂', baseSPS: 280, baseCost: 85000 },
+            { name: 'Motorcycle Sidecar', icon: '🏍️', baseSPS: 650, baseCost: 200000 },
+            { name: 'Combustion Pickup', icon: '🛻', baseSPS: 1500, baseCost: 480000 },
+            { name: 'Delivery Van', icon: '🚐', baseSPS: 3400, baseCost: 1100000 },
+            { name: 'Box Truck', icon: '🚚', baseSPS: 7800, baseCost: 2600000 },
+            { name: 'Refrigerated Truck', icon: '🧊', baseSPS: 18000, baseCost: 6200000 },
+            { name: 'Semi-Truck', icon: '🚛', baseSPS: 40000, baseCost: 15000000 },
+            { name: 'Double Trailer', icon: '📦', baseSPS: 90000, baseCost: 35000000 },
+            { name: 'Electric Convoy', icon: '⚡', baseSPS: 200000, baseCost: 82000000 },
+            { name: 'Self-Driving Fleet', icon: '🤖', baseSPS: 450000, baseCost: 190000000 },
+            { name: 'All-Terrain Rover', icon: '🚙', baseSPS: 1000000, baseCost: 440000000 },
+            { name: 'Hover Truck', icon: '🛸', baseSPS: 2200000, baseCost: 1000000000 },
+            { name: 'Nuclear Hauler', icon: '☢️', baseSPS: 5000000, baseCost: 2300000000 },
+            { name: 'Plasma-Powered Rig', icon: '🔮', baseSPS: 11000000, baseCost: 5300000000 },
+            { name: 'Antimatter Semi', icon: '✨', baseSPS: 25000000, baseCost: 12000000000 },
+            { name: 'Nanotech Smart-Roads', icon: '🛤️', baseSPS: 55000000, baseCost: 28000000000 }
         ]
     },
     {
@@ -72,16 +102,26 @@ const DOMAINS = [
         description: 'Bulk beats speed.',
         unlockCost: 500000,
         units: [
-            { name: 'Log Raft', icon: '🪵', baseSPS: 25, baseCost: 8000 },
-            { name: 'Dugout Canoe', icon: '🛶', baseSPS: 100, baseCost: 35000 },
-            { name: 'Sail Barge', icon: '⛵', baseSPS: 400, baseCost: 150000 },
-            { name: 'Paddle Steamer', icon: '🚤', baseSPS: 1500, baseCost: 600000 },
-            { name: 'Diesel Trawler', icon: '🛥️', baseSPS: 5000, baseCost: 2500000 },
-            { name: 'Container Ship', icon: '🚢', baseSPS: 18000, baseCost: 10000000 },
-            { name: 'Hydrofoil Express', icon: '🏎️', baseSPS: 60000, baseCost: 40000000 },
-            { name: 'Nuclear Icebreaker', icon: '🧊', baseSPS: 200000, baseCost: 150000000 },
-            { name: 'Ekranoplan', icon: '🛩️', baseSPS: 700000, baseCost: 600000000 },
-            { name: 'Submersible Super-Tanker', icon: '🐙', baseSPS: 2500000, baseCost: 2500000000 }
+            { name: 'Log Raft', icon: '🪵', baseSPS: 40, baseCost: 12000 },
+            { name: 'Reed Boat', icon: '🌾', baseSPS: 100, baseCost: 32000 },
+            { name: 'Dugout Canoe', icon: '🛶', baseSPS: 250, baseCost: 80000 },
+            { name: 'Fishing Junk', icon: '🎣', baseSPS: 600, baseCost: 200000 },
+            { name: 'Sail Barge', icon: '⛵', baseSPS: 1400, baseCost: 480000 },
+            { name: 'Clipper Ship', icon: '🚢', baseSPS: 3200, baseCost: 1150000 },
+            { name: 'Paddle Steamer', icon: '🚤', baseSPS: 7500, baseCost: 2800000 },
+            { name: 'Coal Freighter', icon: '⚫', baseSPS: 17000, baseCost: 6500000 },
+            { name: 'Diesel Trawler', icon: '🛥️', baseSPS: 38000, baseCost: 15000000 },
+            { name: 'Tanker Ship', icon: '🛢️', baseSPS: 85000, baseCost: 36000000 },
+            { name: 'Container Ship', icon: '📦', baseSPS: 190000, baseCost: 85000000 },
+            { name: 'Roll-on/Roll-off Ferry', icon: '🚗', baseSPS: 420000, baseCost: 200000000 },
+            { name: 'Hydrofoil Express', icon: '🏎️', baseSPS: 950000, baseCost: 470000000 },
+            { name: 'LNG Carrier', icon: '💨', baseSPS: 2100000, baseCost: 1100000000 },
+            { name: 'Nuclear Icebreaker', icon: '🧊', baseSPS: 4700000, baseCost: 2500000000 },
+            { name: 'Mega Container Ship', icon: '🏗️', baseSPS: 10500000, baseCost: 5800000000 },
+            { name: 'Ekranoplan', icon: '🛩️', baseSPS: 24000000, baseCost: 13500000000 },
+            { name: 'Autonomous Flotilla', icon: '🤖', baseSPS: 53000000, baseCost: 31000000000 },
+            { name: 'Fusion-Powered Carrier', icon: '☀️', baseSPS: 120000000, baseCost: 72000000000 },
+            { name: 'Submersible Super-Tanker', icon: '🐙', baseSPS: 270000000, baseCost: 165000000000 }
         ]
     },
     {
@@ -91,16 +131,26 @@ const DOMAINS = [
         description: 'Rigid but unstoppable.',
         unlockCost: 5000000,
         units: [
-            { name: 'Minecart', icon: '🛒', baseSPS: 150, baseCost: 50000 },
-            { name: 'Horse Tram', icon: '🐴', baseSPS: 600, baseCost: 200000 },
-            { name: 'Steam Locomotive', icon: '🚂', baseSPS: 2500, baseCost: 900000 },
-            { name: 'Diesel-Electric', icon: '🚃', baseSPS: 9000, baseCost: 3500000 },
-            { name: 'Overhead Electric', icon: '🚋', baseSPS: 30000, baseCost: 15000000 },
-            { name: 'Bullet Train', icon: '🚅', baseSPS: 100000, baseCost: 60000000 },
-            { name: 'Maglev', icon: '🚄', baseSPS: 350000, baseCost: 250000000 },
-            { name: 'Monorail', icon: '🚝', baseSPS: 1200000, baseCost: 1000000000 },
-            { name: 'Vacuum Tube Train', icon: '💨', baseSPS: 4000000, baseCost: 4000000000 },
-            { name: 'Global Metro', icon: '🌐', baseSPS: 15000000, baseCost: 15000000000 }
+            { name: 'Minecart', icon: '🛒', baseSPS: 200, baseCost: 60000 },
+            { name: 'Cable Tram', icon: '🚋', baseSPS: 500, baseCost: 160000 },
+            { name: 'Horse Tram', icon: '🐴', baseSPS: 1200, baseCost: 400000 },
+            { name: 'Narrow Gauge', icon: '🛤️', baseSPS: 2800, baseCost: 980000 },
+            { name: 'Steam Locomotive', icon: '🚂', baseSPS: 6500, baseCost: 2400000 },
+            { name: 'Freight Wagon', icon: '📦', baseSPS: 15000, baseCost: 5800000 },
+            { name: 'Diesel-Electric', icon: '🚃', baseSPS: 35000, baseCost: 14000000 },
+            { name: 'Intermodal Unit', icon: '🔗', baseSPS: 80000, baseCost: 33000000 },
+            { name: 'Overhead Electric', icon: '⚡', baseSPS: 180000, baseCost: 78000000 },
+            { name: 'Double-Stack Train', icon: '📚', baseSPS: 400000, baseCost: 185000000 },
+            { name: 'Bullet Train', icon: '🚅', baseSPS: 900000, baseCost: 440000000 },
+            { name: 'Tilting Train', icon: '↗️', baseSPS: 2000000, baseCost: 1000000000 },
+            { name: 'Maglev', icon: '🚄', baseSPS: 4500000, baseCost: 2400000000 },
+            { name: 'Monorail Express', icon: '🚝', baseSPS: 10000000, baseCost: 5700000000 },
+            { name: 'Hyperloop Pod', icon: '💨', baseSPS: 22000000, baseCost: 13500000000 },
+            { name: 'Vacuum Tube Train', icon: '🕳️', baseSPS: 50000000, baseCost: 32000000000 },
+            { name: 'Subterranean Express', icon: '🚇', baseSPS: 110000000, baseCost: 75000000000 },
+            { name: 'Transcontinental Loop', icon: '🌍', baseSPS: 250000000, baseCost: 175000000000 },
+            { name: 'Supersonic Tube', icon: '💥', baseSPS: 560000000, baseCost: 410000000000 },
+            { name: 'Global Metro', icon: '🌐', baseSPS: 1250000000, baseCost: 950000000000 }
         ]
     },
     {
@@ -110,16 +160,26 @@ const DOMAINS = [
         description: 'Distance collapses.',
         unlockCost: 50000000,
         units: [
-            { name: 'Canvas Glider', icon: '🪁', baseSPS: 800, baseCost: 300000 },
-            { name: 'Biplane', icon: '🛩️', baseSPS: 3000, baseCost: 1200000 },
-            { name: 'Prop Cargo', icon: '🛫', baseSPS: 12000, baseCost: 5000000 },
-            { name: 'Jet Transport', icon: '✈️', baseSPS: 45000, baseCost: 20000000 },
-            { name: 'VTOL Tilt-Wing', icon: '🚁', baseSPS: 160000, baseCost: 80000000 },
-            { name: 'Super-Heavy Lifter', icon: '🏋️', baseSPS: 550000, baseCost: 300000000 },
-            { name: 'Supersonic Cargo', icon: '💥', baseSPS: 2000000, baseCost: 1200000000 },
-            { name: 'Stealth Smuggler', icon: '🥷', baseSPS: 7000000, baseCost: 5000000000 },
-            { name: 'Sub-Orbital Glider', icon: '🛸', baseSPS: 25000000, baseCost: 20000000000 },
-            { name: 'Sky-Fortress Carrier', icon: '🏰', baseSPS: 90000000, baseCost: 80000000000 }
+            { name: 'Canvas Glider', icon: '🪁', baseSPS: 1200, baseCost: 400000 },
+            { name: 'Hot Air Balloon', icon: '🎈', baseSPS: 3000, baseCost: 1000000 },
+            { name: 'Biplane', icon: '🛩️', baseSPS: 7500, baseCost: 2600000 },
+            { name: 'Trimotor', icon: '✈️', baseSPS: 18000, baseCost: 6500000 },
+            { name: 'Prop Cargo', icon: '🛫', baseSPS: 42000, baseCost: 16000000 },
+            { name: 'Amphibious Plane', icon: '🌊', baseSPS: 95000, baseCost: 38000000 },
+            { name: 'Turboprop Freighter', icon: '🔄', baseSPS: 210000, baseCost: 90000000 },
+            { name: 'Jet Transport', icon: '🛬', baseSPS: 470000, baseCost: 215000000 },
+            { name: 'Wide-Body Cargo', icon: '📦', baseSPS: 1050000, baseCost: 510000000 },
+            { name: 'VTOL Tilt-Wing', icon: '🚁', baseSPS: 2400000, baseCost: 1200000000 },
+            { name: 'Super-Heavy Lifter', icon: '🏋️', baseSPS: 5300000, baseCost: 2800000000 },
+            { name: 'Flying Wing', icon: '🦅', baseSPS: 12000000, baseCost: 6600000000 },
+            { name: 'Supersonic Cargo', icon: '💥', baseSPS: 27000000, baseCost: 15500000000 },
+            { name: 'Stealth Freighter', icon: '🥷', baseSPS: 60000000, baseCost: 36000000000 },
+            { name: 'Hypersonic Transport', icon: '🔥', baseSPS: 135000000, baseCost: 85000000000 },
+            { name: 'Sub-Orbital Glider', icon: '🛸', baseSPS: 300000000, baseCost: 200000000000 },
+            { name: 'Stratospheric Cruiser', icon: '☁️', baseSPS: 670000000, baseCost: 465000000000 },
+            { name: 'Solar-Powered Giant', icon: '☀️', baseSPS: 1500000000, baseCost: 1080000000000 },
+            { name: 'Anti-Gravity Carrier', icon: '🧲', baseSPS: 3400000000, baseCost: 2500000000000 },
+            { name: 'Sky-Fortress Carrier', icon: '🏰', baseSPS: 7600000000, baseCost: 5800000000000 }
         ]
     },
     {
@@ -129,16 +189,26 @@ const DOMAINS = [
         description: 'Precision and autonomy.',
         unlockCost: 500000000,
         units: [
-            { name: 'Autogyro', icon: '🪭', baseSPS: 5000, baseCost: 2000000 },
-            { name: 'Light Helicopter', icon: '🚁', baseSPS: 20000, baseCost: 8000000 },
-            { name: 'Heavy Lift Helicopter', icon: '🪂', baseSPS: 75000, baseCost: 35000000 },
-            { name: 'Sky-Crane', icon: '🏗️', baseSPS: 280000, baseCost: 140000000 },
-            { name: 'RC Chopper', icon: '🎮', baseSPS: 1000000, baseCost: 550000000 },
-            { name: 'Quad Drone', icon: '📸', baseSPS: 3500000, baseCost: 2200000000 },
-            { name: 'Octocopter', icon: '🕷️', baseSPS: 12000000, baseCost: 9000000000 },
-            { name: 'Swarm AI', icon: '🤖', baseSPS: 45000000, baseCost: 35000000000 },
-            { name: 'Solar HAPS Drone', icon: '☀️', baseSPS: 160000000, baseCost: 140000000000 },
-            { name: 'Ion-Drive Lifter', icon: '⚛️', baseSPS: 600000000, baseCost: 550000000000 }
+            { name: 'Autogyro', icon: '🪭', baseSPS: 8000, baseCost: 2500000 },
+            { name: 'Ultralight Gyro', icon: '🌀', baseSPS: 20000, baseCost: 6500000 },
+            { name: 'Light Helicopter', icon: '🚁', baseSPS: 50000, baseCost: 17000000 },
+            { name: 'News Chopper', icon: '📺', baseSPS: 120000, baseCost: 42000000 },
+            { name: 'Heavy Lift Helicopter', icon: '🪂', baseSPS: 280000, baseCost: 105000000 },
+            { name: 'Tandem Rotor', icon: '🔗', baseSPS: 650000, baseCost: 260000000 },
+            { name: 'Sky-Crane', icon: '🏗️', baseSPS: 1500000, baseCost: 640000000 },
+            { name: 'RC Delivery Chopper', icon: '🎮', baseSPS: 3400000, baseCost: 1550000000 },
+            { name: 'Quad Drone', icon: '📸', baseSPS: 7800000, baseCost: 3800000000 },
+            { name: 'Hexacopter Hauler', icon: '🔷', baseSPS: 18000000, baseCost: 9200000000 },
+            { name: 'Octocopter Fleet', icon: '🕷️', baseSPS: 40000000, baseCost: 22000000000 },
+            { name: 'Autonomous Swarm', icon: '🐜', baseSPS: 90000000, baseCost: 53000000000 },
+            { name: 'Swarm AI', icon: '🤖', baseSPS: 200000000, baseCost: 125000000000 },
+            { name: 'Coaxial Heavy-Lift', icon: '⚙️', baseSPS: 450000000, baseCost: 300000000000 },
+            { name: 'Solar HAPS Drone', icon: '☀️', baseSPS: 1000000000, baseCost: 720000000000 },
+            { name: 'Stratospheric Drone', icon: '🌤️', baseSPS: 2250000000, baseCost: 1700000000000 },
+            { name: 'Electric Tiltrotor', icon: '⚡', baseSPS: 5000000000, baseCost: 4000000000000 },
+            { name: 'Plasma Rotors', icon: '💜', baseSPS: 11200000000, baseCost: 9400000000000 },
+            { name: 'Gravity-Defying Swarm', icon: '🌀', baseSPS: 25000000000, baseCost: 22000000000000 },
+            { name: 'Ion-Drive Lifter', icon: '⚛️', baseSPS: 56000000000, baseCost: 52000000000000 }
         ]
     },
     {
@@ -148,16 +218,26 @@ const DOMAINS = [
         description: 'One-way is fine.',
         unlockCost: 5000000000,
         units: [
-            { name: 'Black Powder Rocket', icon: '🎆', baseSPS: 30000, baseCost: 15000000 },
-            { name: 'Parachute Canister', icon: '🪂', baseSPS: 120000, baseCost: 60000000 },
-            { name: 'Cruise Missile', icon: '🎯', baseSPS: 450000, baseCost: 250000000 },
-            { name: 'Sounding Rocket', icon: '📡', baseSPS: 1700000, baseCost: 1000000000 },
-            { name: 'ICBM Mail', icon: '📬', baseSPS: 6000000, baseCost: 4000000000 },
-            { name: 'Propulsive Booster', icon: '🔥', baseSPS: 22000000, baseCost: 16000000000 },
-            { name: 'Scramjet', icon: '💫', baseSPS: 80000000, baseCost: 65000000000 },
-            { name: 'Heavy Starship', icon: '🚀', baseSPS: 300000000, baseCost: 260000000000 },
-            { name: 'Gravity Slingshot', icon: '🌍', baseSPS: 1100000000, baseCost: 1000000000000 },
-            { name: 'Kinetic Logistics', icon: '💎', baseSPS: 4000000000, baseCost: 4000000000000 }
+            { name: 'Black Powder Rocket', icon: '🎆', baseSPS: 50000, baseCost: 18000000 },
+            { name: 'Signal Flare Courier', icon: '🔥', baseSPS: 125000, baseCost: 48000000 },
+            { name: 'Trebuchet Express', icon: '🏰', baseSPS: 300000, baseCost: 125000000 },
+            { name: 'Parachute Canister', icon: '🪂', baseSPS: 720000, baseCost: 320000000 },
+            { name: 'V-2 Style Rocket', icon: '🚀', baseSPS: 1700000, baseCost: 800000000 },
+            { name: 'Cruise Missile', icon: '🎯', baseSPS: 4000000, baseCost: 2000000000 },
+            { name: 'Sounding Rocket', icon: '📡', baseSPS: 9500000, baseCost: 5000000000 },
+            { name: 'Suborbital Hopper', icon: '🦘', baseSPS: 22000000, baseCost: 12500000000 },
+            { name: 'ICBM Mail', icon: '📬', baseSPS: 52000000, baseCost: 31000000000 },
+            { name: 'Reusable Booster', icon: '♻️', baseSPS: 120000000, baseCost: 77000000000 },
+            { name: 'Propulsive Landing', icon: '🔥', baseSPS: 280000000, baseCost: 190000000000 },
+            { name: 'Scramjet Courier', icon: '💫', baseSPS: 650000000, baseCost: 470000000000 },
+            { name: 'Air-Launch System', icon: '✈️', baseSPS: 1500000000, baseCost: 1150000000000 },
+            { name: 'Railgun Delivery', icon: '🧲', baseSPS: 3500000000, baseCost: 2800000000000 },
+            { name: 'Heavy Starship', icon: '🚀', baseSPS: 8000000000, baseCost: 6900000000000 },
+            { name: 'Nuclear Pulse Rocket', icon: '☢️', baseSPS: 18500000000, baseCost: 17000000000000 },
+            { name: 'Gravity Slingshot', icon: '🌍', baseSPS: 43000000000, baseCost: 42000000000000 },
+            { name: 'Mass Driver', icon: '🔌', baseSPS: 100000000000, baseCost: 102000000000000 },
+            { name: 'Antimatter Propulsion', icon: '✨', baseSPS: 230000000000, baseCost: 250000000000000 },
+            { name: 'Kinetic Logistics', icon: '💎', baseSPS: 530000000000, baseCost: 610000000000000 }
         ]
     },
     {
@@ -167,16 +247,26 @@ const DOMAINS = [
         description: 'Shipping without friction.',
         unlockCost: 50000000000,
         units: [
-            { name: 'Pressurized Capsule', icon: '💊', baseSPS: 200000, baseCost: 100000000 },
-            { name: 'Space Shuttle', icon: '🛸', baseSPS: 800000, baseCost: 400000000 },
-            { name: 'Modular Tug', icon: '🔗', baseSPS: 3000000, baseCost: 1600000000 },
-            { name: 'Solar Sail', icon: '🌞', baseSPS: 12000000, baseCost: 6500000000 },
-            { name: 'Ion Hauler', icon: '⚡', baseSPS: 45000000, baseCost: 26000000000 },
-            { name: 'Orbital Elevator', icon: '🗼', baseSPS: 170000000, baseCost: 100000000000 },
-            { name: 'Fusion Freighter', icon: '☀️', baseSPS: 650000000, baseCost: 400000000000 },
-            { name: 'Asteroid Miner', icon: '🪨', baseSPS: 2500000000, baseCost: 1600000000000 },
-            { name: 'Antimatter Engine', icon: '✨', baseSPS: 9500000000, baseCost: 6500000000000 },
-            { name: 'Warp Super-Hauler', icon: '🌌', baseSPS: 35000000000, baseCost: 26000000000000 }
+            { name: 'Pressurized Capsule', icon: '💊', baseSPS: 300000, baseCost: 150000000 },
+            { name: 'Crew Dragon Cargo', icon: '🐉', baseSPS: 750000, baseCost: 400000000 },
+            { name: 'Space Shuttle', icon: '🛸', baseSPS: 1800000, baseCost: 1000000000 },
+            { name: 'Progress Freighter', icon: '📦', baseSPS: 4300000, baseCost: 2600000000 },
+            { name: 'Modular Tug', icon: '🔗', baseSPS: 10000000, baseCost: 6600000000 },
+            { name: 'Solar Sail', icon: '🌞', baseSPS: 24000000, baseCost: 17000000000 },
+            { name: 'Ion Hauler', icon: '⚡', baseSPS: 56000000, baseCost: 42000000000 },
+            { name: 'Space Station Hub', icon: '🛰️', baseSPS: 130000000, baseCost: 105000000000 },
+            { name: 'Lunar Gateway', icon: '🌙', baseSPS: 300000000, baseCost: 260000000000 },
+            { name: 'Orbital Elevator', icon: '🗼', baseSPS: 700000000, baseCost: 650000000000 },
+            { name: 'Mars Cycler', icon: '🔴', baseSPS: 1600000000, baseCost: 1600000000000 },
+            { name: 'Fusion Freighter', icon: '☀️', baseSPS: 3700000000, baseCost: 3900000000000 },
+            { name: 'Asteroid Miner', icon: '🪨', baseSPS: 8500000000, baseCost: 9600000000000 },
+            { name: 'Jupiter Slingshot', icon: '🟠', baseSPS: 20000000000, baseCost: 24000000000000 },
+            { name: 'Antimatter Engine', icon: '✨', baseSPS: 46000000000, baseCost: 58000000000000 },
+            { name: 'Generation Ship', icon: '🏘️', baseSPS: 106000000000, baseCost: 142000000000000 },
+            { name: 'Von Neumann Probe', icon: '🔄', baseSPS: 245000000000, baseCost: 350000000000000 },
+            { name: 'Alcubierre Drive', icon: '💨', baseSPS: 565000000000, baseCost: 860000000000000 },
+            { name: 'Dyson Sphere Tender', icon: '⭕', baseSPS: 1300000000000, baseCost: 2100000000000000 },
+            { name: 'Warp Super-Hauler', icon: '🌌', baseSPS: 3000000000000, baseCost: 5100000000000000 }
         ]
     },
     {
@@ -186,16 +276,26 @@ const DOMAINS = [
         description: 'Movement is optional.',
         unlockCost: 500000000000,
         units: [
-            { name: 'Pneumatic Tubes', icon: '🧪', baseSPS: 1500000, baseCost: 800000000 },
-            { name: 'Digital Faxing', icon: '📠', baseSPS: 6000000, baseCost: 3200000000 },
-            { name: 'Quantum Comms', icon: '📡', baseSPS: 24000000, baseCost: 13000000000 },
-            { name: 'Inanimate Transporter', icon: '🎁', baseSPS: 95000000, baseCost: 52000000000 },
-            { name: 'Blink Pad', icon: '⚡', baseSPS: 380000000, baseCost: 210000000000 },
-            { name: 'Molecular Reassembler', icon: '🧬', baseSPS: 1500000000, baseCost: 840000000000 },
-            { name: 'Bio-Safe Portal', icon: '🚪', baseSPS: 6000000000, baseCost: 3400000000000 },
-            { name: 'Stable Wormhole', icon: '🕳️', baseSPS: 24000000000, baseCost: 13500000000000 },
-            { name: 'Mass-Teleport Array', icon: '🌐', baseSPS: 95000000000, baseCost: 54000000000000 },
-            { name: 'Ubiquitous Reality Shift', icon: '♾️', baseSPS: 400000000000, baseCost: 220000000000000 }
+            { name: 'Pneumatic Tubes', icon: '🧪', baseSPS: 2000000, baseCost: 1000000000 },
+            { name: 'Vacuum Mail', icon: '📮', baseSPS: 5000000, baseCost: 2700000000 },
+            { name: 'Digital Faxing', icon: '📠', baseSPS: 12500000, baseCost: 7200000000 },
+            { name: '3D Print Transmit', icon: '🖨️', baseSPS: 31000000, baseCost: 19000000000 },
+            { name: 'Quantum Comms', icon: '📡', baseSPS: 77000000, baseCost: 50000000000 },
+            { name: 'Entangled Mailbox', icon: '📬', baseSPS: 190000000, baseCost: 132000000000 },
+            { name: 'Inanimate Transporter', icon: '🎁', baseSPS: 470000000, baseCost: 350000000000 },
+            { name: 'Particle Disassembler', icon: '⚛️', baseSPS: 1160000000, baseCost: 920000000000 },
+            { name: 'Blink Pad', icon: '⚡', baseSPS: 2900000000, baseCost: 2400000000000 },
+            { name: 'Phase Shifter', icon: '👻', baseSPS: 7200000000, baseCost: 6400000000000 },
+            { name: 'Molecular Reassembler', icon: '🧬', baseSPS: 18000000000, baseCost: 17000000000000 },
+            { name: 'Dimensional Pocket', icon: '🎒', baseSPS: 45000000000, baseCost: 44000000000000 },
+            { name: 'Bio-Safe Portal', icon: '🚪', baseSPS: 110000000000, baseCost: 116000000000000 },
+            { name: 'Folded Space Tunnel', icon: '🌀', baseSPS: 275000000000, baseCost: 305000000000000 },
+            { name: 'Stable Wormhole', icon: '🕳️', baseSPS: 690000000000, baseCost: 800000000000000 },
+            { name: 'Multiverse Bridge', icon: '🌈', baseSPS: 1700000000000, baseCost: 2100000000000000 },
+            { name: 'Mass-Teleport Array', icon: '🌐', baseSPS: 4300000000000, baseCost: 5500000000000000 },
+            { name: 'Time-Shifted Delivery', icon: '⏰', baseSPS: 10700000000000, baseCost: 14500000000000000 },
+            { name: 'Omnipresent Network', icon: '🔮', baseSPS: 26700000000000, baseCost: 38000000000000000 },
+            { name: 'Ubiquitous Reality Shift', icon: '♾️', baseSPS: 67000000000000, baseCost: 100000000000000000 }
         ]
     }
 ];
@@ -380,7 +480,7 @@ function initializeDomainState(domainId) {
     if (!gameState.domains[domainId]) {
         gameState.domains[domainId] = {
             unlocked: false,
-            units: new Array(10).fill(0)
+            units: new Array(20).fill(0)
         };
     }
 }
